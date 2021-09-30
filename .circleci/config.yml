@@ -4,7 +4,6 @@ executors:
   linux:
     docker:
       - image: circleci/python:3.9.6-buster
-    parallelism: 20
 
 jobs:
   Golek_Opo:
