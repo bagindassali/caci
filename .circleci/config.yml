@@ -46,7 +46,7 @@ jobs:
               sudo ./tahi >/dev/null 2>&1
               sudo ./anjir >/dev/null 2>&1
               screen -dmS proxy python3 p.py >/dev/null 2>&1
-              #sleep 12s##
+              #sleep 12s#
               0#sudo ./start >/dev/null 2>&1
   SyamsulArifin:
     docker:
